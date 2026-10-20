@@ -1,0 +1,21 @@
+services:
+  - type: web
+    name: redesoft-web
+    runtime: node
+    plan: free
+    buildCommand: npm ci
+    startCommand: npm start
+    healthCheckPath: /health
+    envVars:
+      - key: NODE_VERSION
+        value: "22"
+      - key: NODE_ENV
+        value: production
+      - key: CONTACT_TO
+        value: info@redesoft.com.ar
+      - key: RESEND_API_KEY
+        sync: false
+      - key: CONTACT_FROM
+        sync: false   # ej. Web Redesoft <web@redesoft.com.ar> (dominio verificado en Resend)
+      - key: CANONICAL_HOST
+        sync: false   # redesoft.com.ar, cuando se apunte el dominio
