@@ -1,0 +1,16 @@
+{
+  "name": "redesoft-web",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Sitio web de Redesoft — Flexxus ERP y marketing digital",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "blog": "node scripts/generar-blog-y-sitemap.mjs",
+    "layout": "node scripts/actualizar-layout.mjs",
+    "check": "node scripts/verificar-enlaces.mjs"
+  },
+  "engines": { "node": "22.x" },
+  "dependencies": { "express": "^4.21.0" }
+}
