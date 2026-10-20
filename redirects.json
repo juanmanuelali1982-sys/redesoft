@@ -1,5 +1,0 @@
-{
-  "_comentario": "Redirecciones 301 desde URLs de la web actual (Webflow) hacia las nuevas. Completar con el relevamiento de URLs indexadas antes de cambiar el DNS. Formato: \"/url-vieja\": \"/url-nueva/\"",
-  "/home": "/",
-  "/inicio": "/"
-}
