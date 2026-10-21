@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /blog/_plantilla-nota
+
+Sitemap: https://redesoft.com.ar/sitemap.xml
